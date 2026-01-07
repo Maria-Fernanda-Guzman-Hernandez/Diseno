@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LA RUTA DEL ATASCÓN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <div id="fixed-header-container">
+        <div id="top-header">
+            <img src="Imag/chido.png" alt="Logo Header" class="header-logo">
+            <nav id="nav-links-container">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a> 
+                        <div class="nav-item-with-submenu">
+                            <a class="nav-link active" href="sobre.html"><i class="fas fa-users"></i> Sobre nosotros</a> 
+                            <div class="submenu">
+                            <a href="#Cuerpo">Sobre nosotros.</a>
+                            <a href="#Subtitulo">Promociones.</a>
+                        </div>
+                    </div>
+                <a class="nav-link" href="bebidas.html"><i class="fas fa-cocktail"></i> Bebidas</a>
+                <a class="nav-link" href="comida.html"><i class="fas fa-hamburger"></i> Comida</a> 
+                <a class="nav-link" href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de...</a>
+            </nav>
+        </div>
+    </div>
+
+    <div id="chatbot-launcher" onclick="toggleChat()"><i class="fas fa-comment-dots"></i></div>
+
+
+<div id="chatbot-window" style="display: none;">
+    <div class="chat-header">
+        <span>Asistente de la ruta del atascón</span>
+        <span class="chat-close" onclick="closeChat()">✕</span>
+    </div>
+
+    <div id="chat-messages" style="display: flex; flex-direction: column;">
+        <div class="bot-msg">
+            ¡Bienvenido! 🍔, soy "Atasquito", estoy aquí para ayudarlo.
+            ¿Busca alguna recomendación o quiere ver el menú?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="bot-input" placeholder="Pregunta por un platillo...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+    
+    <header>
+        <h1 id="Titulo">LA RUTA DEL ATASCÓN</h1>
+        <p id="Cuerpo">"La ruta del atascón fue creada pensando en la satisfacción de 
+            nuestros clientes. Nuestro objetivo es entregar productos de alta calidad."</p>
+
+        <section class="carrusel2-container">
+            <button id="prev-carrusel2-btn" class="carrusel2-nav-btn"> &lt; </button>
+            
+            <div class="carrusel2-slide">
+                <img src="Imag/hemu.jpg" alt="Plato 1">
+                <img src="Imag/hambusin.jpg" alt="Plato 2">
+                <img src="Imag/hambu2.jpg" alt="Plato 3">
+                <img src="Imag/hemu2.jpg" alt="Plato 4">
+                <img src="Imag/hambusin2.jpg" alt="Plato 5">
+                <img src="Imag/hambu22.jpg" alt="Plato 6">
+            </div>
+
+            <button id="next-carrusel2-btn" class="carrusel2-nav-btn"> &gt; </button>
+           
+        </section>
+         <center><audio src="Audio/sobre.mpeg" controls></audio></center>
+        <p id="Cuerpo">Nosotros nos preocupamos por su paladar, horneamos nuestro propio pan y creamos nuestra propia carne.</p>
+
+        <h3 id="Subtitulo">En honor a nuestro nombre, ponemos a su disposición promociones especialmente diseñadas para usted.</h3>
+
+        <center><img src="Imag/promo.jpg" width="350px" height="380px" alt="Promoción"></center> 
+        <br>
+    </header>
+
+    <footer>
+        <div class="contenedor">
+            <div class="footer-info">
+                <h2>La ruta del atascon</h2> 
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Imag/chido.png" alt="Logo Footer" style="max-width: 100px;">
+            </div>
+
+            <div class="footer-form-container">
+                <h3 class="titulo-footer">Comentarios</h3>
+                <p class="subtitulo-footer">Lo apreciaremos mucho</p>
+
+                <form name="formulario" method="POST" action="registro.php">
+                    <div class="form-row">
+                        <input type="text" name="nombre" placeholder="Nombre..." required>
+                        <input type="email" name="email" placeholder="Email..." required>
+                    </div>
+                    <textarea name="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <BR><CENTER><p>©2025 LA RUTA DEL ATASCÓN - TODOS LOS DERECHOS RESERVADOS</p></CENTER>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
