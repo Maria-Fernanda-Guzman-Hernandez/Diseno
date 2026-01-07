@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LA RUTA DEL ATASCÓN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/[TU-KIT-CODE].js" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+    <body>
+        <div id="fixed-header-container">
+            <div id="top-header">
+                <img src="Imag/chido.png" alt="Logo de La Ruta del Atascón - Header" class="header-logo">
+                <nav id="nav-links-container">
+                    <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a> 
+                    <a class="nav-link" href="sobre.html"><i class="fas fa-users"></i> Sobre nosotros</a> 
+                    <a class="nav-link" href="bebidas.html"><i class="fas fa-cocktail"></i> Bebidas</a>
+                    <a class="nav-link" href="comida.html"><i class="fas fa-hamburger "></i> Comida</a> 
+                    <div class="nav-item-with-submenu">
+                            <a class="nav-link active" href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de...</a> 
+                            <div class="submenu">
+                                <a href="#Titulo1">Historia.</a>
+                                <a href="#mapa">Dirección.</a>
+                                <a href="#Redes">Redes sociales.</a>
+                            </div>
+                    </div>
+                    
+                </nav>
+            </div>
+        </div>
+
+        <div id="chatbot-launcher" onclick="toggleChat()"><i class="fas fa-comment-dots"></i></div>
+
+
+<div id="chatbot-window" style="display: none;">
+    <div class="chat-header">
+        <span>Asistente de la ruta del atascón</span>
+        <span class="chat-close" onclick="closeChat()">✕</span>
+    </div>
+
+    <div id="chat-messages" style="display: flex; flex-direction: column;">
+        <div class="bot-msg">
+            ¡Bienvenido! 🍔, soy "Atasquito", estoy aquí para ayudarlo.
+            ¿Busca alguna recomendación o quiere ver el menú?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="bot-input" placeholder="Pregunta por un platillo...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+        
+ <header>
+    <h1 id="Titulo1">Acerca de...</h1>
+
+    <section class="acerca-principal-container">
+        <div class="acerca-texto">
+            <h3 id="Subtitulo">LA RUTA DEL ATASCÓN</h3>
+            <p id="cuerpo">Bienvenidos a La Ruta del Atascón, el destino ideal para satisfacer cualquier antojo. 
+                Nuestra historia es un recorrido marcado por la pasión por el buen sabor, el cual inició en 
+                noviembre de 2020. Fue en esa fecha cuando nuestro fundador y actual propietario, Daniel Guzmán 
+                Hernández, dio vida a este proyecto culinario. Algunos quizá nos recuerden por nuestro primer nombre, 
+                “Eddgu'z”, con el que comenzamos nuestra travesía y conquistamos nuestros primeros paladares. 
+                No obstante, con el propósito de reflejar de manera más fiel nuestra identidad y la experiencia generosa 
+                que ofrecemos, evolucionamos para convertirnos en La Ruta del Atascón. Bajo la misma dirección y el 
+                entusiasmo constante de Daniel, continuamos creciendo, manteniéndonos fieles a nuestros orígenes y 
+                comprometidos con ofrecer calidad y un sabor inolvidable en cada visita.</p>
+        </div>
+
+        <div class="acerca-imagen-chef">
+            <img src="Imag/chef.png" alt="Chef Daniel Guzmán Hernández" class="chef-img">
+        </div>
+    </section>
+
+    <section class="mapa-redes-row">
+        
+        <div class="acerca-mapa-ubicacion">
+            <div class="acerca-ubicacion-info">
+                <h3 id="Subtitulo">Tláhuac, Miguel Hidalgo, 13200, La Gioconda</h3>
+            </div>
+            
+            <div class="acerca-mapa" id="mapa">
+                <img src="Imag/maps.png" alt="Ubicación en Google Maps" style="width:100%; height:auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="acerca-redes-contacto" id="Redes">
+            <h3 class="contacto-titulo">Si desea cotizar o contratar nuestros servicios para algún evento puede contactarnos:</h3>
+            
+            <ul class="lista-contacto-iconos">
+                <li>
+                    <span class="icono-fa">&#xf09a;</span> Facebook: "La ruta del atascón"
+                </li>
+                <li>
+                    <span class="icono-fa">&#xf16d;</span> Instagram: "La rura del atascón"
+                </li>
+                <li>
+                    <span class="icono-fa">&#xf095;</span> Teléfono: 55 1025 6523
+                </li>
+            </ul>
+        </div>
+
+    </section> 
+    
+</header>
+    <footer>
+        <div class="contenedor">
+            <div class="footer-info">
+                <h2>La ruta del atascon</h2> 
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Imag/chido.png" alt="Logo de La ruta del atascón">
+                <div class="social-icons">
+                    </div>
+            </div>
+
+
+            <div class="footer-form-container">
+                <h3 class="titulo-footer">Comentarios</h3>
+                <p class="subtitulo-footer">Lo apreciaremos mucho</p>
+
+                <form name="formulario" method="POST" action="registro.php">
+                    <div class="form-row">
+                        <input type="text" name="nombre" placeholder="Nombre...">
+                        <input type="email" name="email" placeholder="Email...">
+                    </div>
+                    
+                    <textarea name="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <BR><CENTER><p>©2025 LA RUTA DEL ATASCÓN - TODOS LOS DERECHOS RESERVADOS</p></CENTER>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>

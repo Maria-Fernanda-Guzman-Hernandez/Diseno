@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LA RUTA DEL ATASCÓN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <div id="fixed-header-container">
+        <div id="top-header">
+            <img src="Imag/chido.png" alt="Logo de La Ruta del Atascón - Header" class="header-logo">
+            <nav id="nav-links-container">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a> 
+                <a class="nav-link" href="sobre.html"><i class="fas fa-users"></i> Sobre nosotros</a> 
+                <a class="nav-link" href="bebidas.html"><i class="fas fa-cocktail"></i> Bebidas</a>
+                
+                <div class="nav-item-with-submenu">
+                    <a class="nav-link active" href="comida.html"><i class="fas fa-hamburger"></i> Comida</a>
+                    <div class="submenu">
+                        <a href="#hambur">Parada Burguer</a>
+                        <a href="#picante">Estación Picante</a>
+                        <a href="#brochetas">Brochetas del Pecado</a>
+                        <a href="#ultima">La Última Tentación</a>
+                    </div>
+                </div>
+
+                <a class="nav-link" href="acerca.html"><i class="fas fa-info-circle"></i> Acerca de...</a>
+            </nav>
+        </div>
+    </div>
+<div id="chatbot-launcher" onclick="toggleChat()"><i class="fas fa-comment-dots"></i></div>
+
+
+<div id="chatbot-window" style="display: none;">
+    <div class="chat-header">
+        <span>Asistente de la ruta del atascón</span>
+        <span class="chat-close" onclick="closeChat()">✕</span>
+    </div>
+
+    <div id="chat-messages" style="display: flex; flex-direction: column;">
+        <div class="bot-msg">
+            ¡Bienvenido! 🍔, soy "Atasquito", estoy aquí para ayudarlo.
+            ¿Busca alguna recomendación o quiere ver el menú?
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="bot-input" placeholder="Pregunta por un platillo...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+
+
+       
+    <main class="menu-food-main-content">
+        
+            <h2 class="section-title" id="hambur">Parada Burguer</h2>
+            
+            <div class="menu-grid-food">
+                
+                <div class="food-item-big">
+                    <img src="Imag/arrachera.jpg" alt="La Vaquera Atascada" class="food-img-big">
+                    <div class="food-details-big">
+                        <h3 class="food-name">La Vaquera Atascada</h3>
+                        <p class="food-description">Doble carne de res, doble queso cheddar, aros de cebolla, tocino crujiente, salsa BBQ ahumada, lechuga, tomate y aderezo de chipotle. Una experiencia sin límites.</p>
+                        <p class="food-price"> $150.00 <span class="tax-note">(c/papas)</span></p>
+                    </div>
+                </div>
+
+                <div class="food-grid-3x2">
+                    
+                    <div class="food-item-small">
+                        <img src="Imag/sensilla.jpg" alt="Hamburguesa Clásica del atascón" class="food-img-small">
+                        <h4 class="food-name-small">Clásica del atascón</h4>
+                        <p class="food-description-small">Carne a la parrilla, pan artesanal, lechuga y jitomate</p>
+                    </div>
+
+                    <div class="food-item-small">
+                        <img src="Imag/vegetariana.jpg" alt="Verde rebelde" class="food-img-small">
+                        <h4 class="food-name-small">Verde Rebelde</h4>
+                        <p class="food-description-small">Hamburguesa con hongo portobelo, pan artesanal, lechuga y jitomate</p>
+                    </div>
+
+                    <div class="food-item-small">
+                        <img src="Imag/Hawaiiana.jpg" alt=" Aloha Atascón" class="food-img-small">
+                        <h4 class="food-name-small"> Aloha Atascón</h4>
+                        <p class="food-description-small">Carne a la parrilla, tocino, queso derretido, pan artesanal, piña reposada.</p>
+                    </div>
+
+                    <div class="food-item-small">
+                        <img src="Imag/3QUESOS.jpg" alt="La Triple Quesuda" class="food-img-small">
+                        <h4 class="food-name-small">La Triple Quesuda</h4>
+                        <p class="food-description-small">Carne de res, triple queso (manchego, americano, oaxaca) y extra tocino.</p>
+                    </div>
+
+                    <div class="food-item-small">
+                        <img src="Imag/Mariscos.png" alt="Sushi Burger Crunch" class="food-img-small">
+                        <h4 class="food-name-small">Sushi Burger Crunch</h4>
+                        <p class="food-description-small">Base de arroz frito, camarones tempura, aderezo spicy y aguacate.</p>
+                    </div>
+
+                    <div class="food-item-small">
+                        <img src="Imag/DOBLE.jpg" alt="Monstruosa doble" class="food-img-small">
+                        <h4 class="food-name-small">Monstruosa Doble</h4>
+                        <p class="food-description-small">Dos carnes, queso doble, lechuga, jitomate y cebolla crujiente.</p>
+                    </div>
+
+                </div> 
+            </div> 
+            
+            
+            <h2 class="section-title" id="picante">La Estación Picante</h2>
+            
+            <div class="menu-grid-food">
+                
+                <div class="food-item-small">
+                    <img src="Imag/habanero.jpg" alt="Infierno habanero" class="food-img-small">
+                    <h4 class="food-name-small">Infierno habanero</h4>
+                    <p class="food-description-small">Alitas bañadas en salsa Búfalo original. Con aderezo ranch o blue cheese.</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/bbq.jpg" alt="BBQ Atascada" class="food-img-small">
+                    <h4 class="food-name-small">BBQ Atascada</h4>
+                    <p class="food-description-small">Dulces y ahumadas, cubiertas con clásica salsa BBQ de sabor intenso y caramelizado.</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/bbq.jpg" alt="Tamarindo Endiablado" class="food-img-small">
+                    <h4 class="food-name-small">Tamarindo Endiablado</h4>
+                    <p class="food-description-small">Mezcla perfecta entre lo dulce del tamarindo y el picor del habanero. Ácidas, dulces y picosas.</p>
+                </div>
+                
+
+                <div class="food-item-small">
+                    <img src="Imag/mango.jpg" alt="Mango Explosión Atascada" class="food-img-small">
+                    <h4 class="food-name-small">Mango Explosión Atascada</h4>
+                    <p class="food-description-small">Dulce toque tropical con un final picante. Equilibrio ideal entre mango fresco y habanero</p>
+                </div>
+                
+                <img src="Imag/chido.png" alt="Logo La Ruta del Atascón" class="central-logo-food">
+                
+                <div class="food-item-small">
+                    <img src="Imag/bufalo.jpg" alt="Búfalo Brutal" class="food-img-small">
+                    <h4 class="food-name-small">Búfalo Brutal</h4>
+                    <p class="food-description-small">Búfalo Brutal</p>
+                </div>
+                
+            </div> 
+
+        
+
+        
+            <h2 class="section-title"  id="brochetas">Brochetas del Pecado</h2>
+            
+            <div class="menu-grid-food food-grid-small-only">
+                
+                <div class="food-item-small">
+                    <img src="Imag/kushi.jpg" alt="Brocheta de Camarón" class="food-img-small">
+                    <h4 class="food-name-small">CamarónQ atascado</h4>
+                    <p class="food-description-small">Camarones con queso philadelphia, envueltos en panko</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/manchego.jpg" alt="Manchego crunch" class="food-img-small">
+                    <h4 class="food-name-small">Manchego crunch</h4>
+                    <p class="food-description-small">Brochetas de queso manchego acompañadas de una salsa preparada.</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/kushi.jpg" alt="Philly Atascado" class="food-img-small">
+                    <h4 class="food-name-small">Philly Atascado</h4>
+                    <p class="food-description-small">Queso philadelphia acompañado de una salsa preparada.</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/kushi.jpg" alt="PolloQ Atascado" class="food-img-small">
+                    <h4 class="food-name-small">PolloQ Atascado</h4>
+                    <p class="food-description-small">Pollo con queso philadelphia</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/karrachera.jpg" alt="Brocheta Macho Extremo" class="food-img-small">
+                    <h4 class="food-name-small">Brocheta Macho Extremo</h4>
+                    <p class="food-description-small">Brocheta de carne arrachera</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/kushi.jpg" alt="La rutaQuesuda" class="food-img-small">
+                    <h4 class="food-name-small">BLa rutaQuesuda"</h4>
+                    <p class="food-description-small">Brocheta de queso philadelphia</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/macho.jpg" alt="Banana Dorada del Camino" class="food-img-small">
+                    <h4 class="food-name-small">Banana Dorada del Camino</h4>
+                    <p class="food-description-small">Platano macho, puede llevar queso manchego</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/champiñon.jpg" alt="Brocheta Veggie del Huerto" class="food-img-small">
+                    <h4 class="food-name-small">Brocheta Veggie del Huerto</h4>
+                    <p class="food-description-small">Champiñones con queso philadelphia</p>
+                </div>
+                <div class="food-item-small">
+                    <img src="Imag/kushi.jpg" alt="SurimiQ del Atascón" class="food-img-small">
+                    <h4 class="food-name-small">SurimiQ del Atascón</h4>
+                    <p class="food-description-small">Queso philadelphia acompañado de una salsa preparada.</p>
+                </div>
+            </div>   
+        
+
+            <h2 class="section-title" id="ultima">La Última Tentación</h2>
+            
+            <div class="menu-grid-food food-grid-small-only">
+                
+                <div class="food-item-small">
+                    <img src="Imag/carlo.jpg" alt="Estación de limón helado" class="food-img-small">
+                    <h4 class="food-name-small">Estación de limón helado</h4>
+                    <p class="food-description-small">Carlota de limón</p>
+                </div>
+
+                <img src="Imag/chido.png" alt="Logo La Ruta del Atascón Central" class="central-logo-food">
+
+                <div class="food-item-small">
+                    <img src="Imag/volcann.jpg" alt="Epicentro de Cacao" class="food-img-small">
+                    <h4 class="food-name-small">Epicentro de Cacao</h4>
+                    <p class="food-description-small">Bizcocho de chocolate con centro líquido, acompañado de helado de vainilla.</p>
+                </div>
+
+
+
+                <div class="food-item-small">
+                    <img src="Imag/helado.jpg" alt="Frontera crujiente" class="food-img-small">
+                    <h4 class="food-name-small">Frontera crujiente</h4>
+                    <p class="food-description-small">Helado frito</p>
+                </div>
+                
+            
+
+                <div class="food-item-small">
+                    <img src="Imag/flanc.jpg" alt="Flan del Camino Real" class="food-img-small">
+                    <h4 class="food-name-small">Flan del Camino Real</h4>
+                    <p class="food-description-small">Flan napolitano de queso</p>
+                </div>
+
+                <div class="food-item-small">
+                    <img src="Imag/cheess.jpg" alt="Ruta del queso" class="food-img-small">
+                    <h4 class="food-name-small">Ruta del queso</h4>
+                    <p class="food-description-small">Cheescake de fresa, zarzamora, chocolate, galleta oreo</p>
+                </div>
+                
+            </div>
+    </main>
+    
+    <footer>
+        <div class="contenedor">
+            <div class="footer-info">
+                <h2>La ruta del atascon</h2> 
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <img src="Imag/chido.png" alt="Logo de La ruta del atascón">
+            </div>
+
+            <div class="footer-form-container">
+                <h3 class="titulo-footer">Comentarios</h3>
+                <p class="subtitulo-footer">Lo apreciaremos mucho</p>
+
+                <form name="formulario" method="POST" action="registro.php">
+                    <div class="form-row">
+                        <input type="text" name="nombre" placeholder="Nombre...">
+                        <input type="email" name="email" placeholder="Email...">
+                    </div>
+                    
+                    <textarea name="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+        <BR><CENTER><p>©2025 LA RUTA DEL ATASCÓN - TODOS LOS DERECHOS RESERVADOS</p></CENTER>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
